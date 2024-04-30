@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+
+$green: #9BDD01;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+body {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1360px;
+    }
+}
+
+
+.secttitle {
+    font-size: 55px;
+    font-family: "Koulen", sans-serif;
+    line-height: 130%;
+    font-weight: 400;
+    color: #fff;
+    span{
+        color: $green;
+    }
+}
+
+
+.sectbtn {
+    background-color: $green;
+    border-radius: 5px;
+    height: 59px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 45px;
+    transition: .4s ease;
+
+    span {
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 600;
+        background: linear-gradient(222deg, rgba(52, 58, 94, 1) 0%, rgba(17, 23, 59, 1) 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    img {
+        width: 23px;
+        background-size: cover;
+        margin-left: 15px;
+        transition: .4s ease;
+    }
+
+    &:hover {
+        filter: brightness(85%);
+
+        img {
+            transform: translateX(10px);
+        }
+    }
+}
+
+.container.line{
+    border-left:  1px solid rgba(#fff, .15);
+    border-right:  1px solid rgba(#fff, .15);
+    height: 100%;
+}
