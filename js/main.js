@@ -11,16 +11,23 @@ $(document).ready(function () {
     }
   });
 
+   // MOBILE MENU ------------------- //
+   $('.burger').click(function () {
+    $(this).toggleClass('open');
+    $('.header__nav').toggleClass('open');
+    $('.header').toggleClass('white-bg');
+});
+
 
   // HEROSLISER ------ //
 
   var swiper = new Swiper(".heroslider", {
     effect: "fade",
     loop: true,
-    speed: 800,
-    autoplay: {
-      delay: 1000,
-  },
+    speed: 1000,
+    // autoplay: {
+    //   delay: 1600,
+    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -31,4 +38,18 @@ $(document).ready(function () {
       },
     },
   });
+});
+
+
+// LOCSECT SLIDER ------ //
+
+var swiper = new Swiper(".locsect__slider", {
+  loop: true,
+  speed: 1200,
+  autoplay: {
+    delay: 1600,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
