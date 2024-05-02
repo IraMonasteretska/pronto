@@ -246,7 +246,6 @@
 .bluesect__inner {
     position: relative;
     padding: 139px 40px 93px 140px;
-    z-index: 1;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -275,7 +274,9 @@
 }
 
 .bluesect__left {
-    width: 477px;
+    max-width: 520px;
+    width: 100%;
+    padding-right: 55px;
 
     .secttitle {
         margin-bottom: 30px;
@@ -346,11 +347,13 @@
 
 .bluesect__right {
     width: 43%;
+    height: fit-content;
     position: relative;
 }
 
 .bluesect__image {
     border-radius: 10px;
+    overflow: hidden;
 
     img {
         width: 100%;
@@ -399,7 +402,7 @@
 }
 
 .locsect__inner {
-    padding: 180px 0 160px;
+    padding: 180px 30px 160px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -562,6 +565,28 @@
 
 //  ADAPTIVE ---------------- //
 @media (max-width: 1399.8px) {
+    .ctasect__inner {
+        padding: 50px 0 50px 25px;
+    }
+    .ctasect__image {
+        right: 0px;
+        width: 45%;
+    }
+    .ctasect__content {
+        max-width: 600px;
+    }
+
+    .locsect__inner {
+        padding: 130px 25px 100px;
+    }
+
+    .bluesect__frame {
+        padding: 20px 20px;
+        width: 220px;
+    }
+    .bluesect__inner {
+        padding: 130px 20px 93px 80px;
+    }
     .heroslider__wrapper {
         padding: 0 25px;
     }
@@ -585,6 +610,30 @@
 }
 
 @media (max-width: 1199.8px) {
+    .ctasect__content {
+        max-width: 500px;
+        .secttitle{
+            margin-bottom: 30px;
+        }
+    }
+    .ctasect__inner {
+        padding: 40px 0 40px 20px;
+    }
+    .locsect__title{
+        margin-bottom: 20px;
+    }
+    .locsect__item{
+        height: 450px;
+    }
+    .locsect__inner {
+        padding: 80px 25px 90px;
+    }
+    .locsect__info {
+        max-width: 100%;
+    }
+    .bluesect__inner {
+        padding: 130px 0px 93px 55px;
+    }
     .ourservice__inner {
         flex-direction: column;
     }
@@ -601,6 +650,44 @@
 }
 
 @media (max-width: 991.8px) {
+    .ctasect__inner {
+        padding: 30px 0 30px 20px;
+    }
+    .ctasect__inner:before {
+        border-bottom: 120px solid #fff;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+    }
+    .ctasect__content {
+        max-width: 430px;
+    }
+    .ctasect__image {
+        right: -30px;
+    }
+    .locsect__item{
+        height: 350px;
+    }
+    .bluesect__inner:before {
+        border-bottom: 100px solid #fff;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+    .bluesect__inner{
+        flex-wrap: wrap;
+        padding: 110px 30px 93px 55px;
+    }
+    .bluesect__left {
+        max-width: 100%;
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 40px;
+    }
+    .bluesect__right {
+        width: 100%;
+    }
+    .bluesect__image{
+        height: 500px;
+    }
     .ourservice__inner {
         padding: 80px 20px 100px 20px;
     }
@@ -614,6 +701,18 @@
     }
 }
 @media (max-width: 767.8px) {
+    .ctasect__inner {
+        padding: 30px 0 100px 20px;
+    }
+    .ctasect__image{
+        bottom: -30px;
+    }
+    .locsect__inner {
+        padding: 70px 15px 60px;
+    }
+    .locsect__item{
+        height: 300px;
+    }
     .heroslider__inner p {
         font-size: 16px;
         margin-bottom: 40px;
@@ -625,6 +724,66 @@
 }
 
 @media (max-width: 575.8px) {
+    .ctasect__bottom .container.line {
+        height: 40px;
+    }
+    .ctasect__inner:before {
+        border-bottom: 85px solid #fff;
+        border-left: 85px solid transparent;
+        border-right: 85px solid transparent;
+    }
+    .ctasect__inner {
+        padding: 30px 25px 100px 5px;
+    }
+    .locsect__inner {
+        padding: 70px 5px 40px;
+    }
+    .locsect__slider {
+    
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            margin: 0 5px !important;
+        }
+    }
+    .locsect__info ul li{
+        width: 45%;
+    }
+    .locsect__item{
+        height: 60vw;
+    }
+    
+    .locsect__slider{
+        margin-top: 20px;
+    }
+    .bluesect__left a{
+        width: 100%;
+    }
+    .bluesect__frame {
+        padding: 13px 20px;
+        width: 220px;
+        bottom: 20px;
+        left: -15px;
+    }
+    .bluesect__left ul li {
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+    .bluesect__left ul li img {
+        width: 28px;
+        height: 28px;
+    }
+    .bluesect__image{
+        height: auto;
+    }
+    .bluesect__inner:before {
+        border-bottom: 85px solid #fff;
+        border-left: 85px solid transparent;
+        border-right: 85px solid transparent;
+    }
+    .bluesect__inner {
+        padding: 100px 15px 70px 20px;
+    }
     .ourservice__inner {
         padding: 60px 5px 80px 5px;
     }

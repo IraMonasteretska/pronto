@@ -166,3 +166,26 @@
         margin: 0;
     }
 }
+
+@media(max-width:991.8px) {
+    .footer__inner {
+        padding: 50px 20px 60px 20px;
+    }
+}
+@media(max-width:767.8px) {
+    .footer__inner {
+        padding: 50px 15px 60px 15px;
+    }
+}
+@media(max-width:575.8px) {
+    .footer__col{
+        width: 40%;
+        &:last-child{
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+    .footer__inner {
+        padding: 50px 5px 60px 5px;
+    }
+}
