@@ -57,7 +57,7 @@ $(document).ready(function () {
   // animate
   AOS.init({
     once: true,
-    duration: 900,
+    duration: 700,
     easing: 'ease-in-out',
     // disable: 'mobile',
   });
