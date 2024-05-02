@@ -26,9 +26,9 @@ $(document).ready(function () {
     effect: "fade",
     loop: true,
     speed: 1000,
-    // autoplay: {
-    //   delay: 1600,
-    // },
+    autoplay: {
+      delay: 1600,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
