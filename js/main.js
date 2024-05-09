@@ -42,17 +42,17 @@ $(document).ready(function () {
 
   // LOCSECT SLIDER ------ //
 
-  var swiper = new Swiper(".locsect__slider", {
-    spaceBetween: 10,
-    loop: true,
-    speed: 1200,
-    autoplay: {
-      delay: 1600,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
+  // var swiper = new Swiper(".locsect__slider", {
+  //   spaceBetween: 10,
+  //   loop: true,
+  //   speed: 1200,
+  //   autoplay: {
+  //     delay: 1600,
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //   },
+  // });
 
   // animate
   AOS.init({

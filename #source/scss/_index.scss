@@ -404,13 +404,28 @@
 .locsect__inner {
     padding: 180px 30px 160px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.locsect__map {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.locsect__content {
+    width: 42%;
+}
+
 .locsect__title {
     position: relative;
-    max-width: 480px;
 
     .secttitle {
         color: #141A3E;
@@ -425,8 +440,11 @@
     }
 }
 
+.locsect__mobile-btn {
+    display: none;
+}
+
 .locsect__info {
-    max-width: 560px;
 
     >p {
         margin-bottom: 40px;
@@ -565,13 +583,23 @@
 
 //  ADAPTIVE ---------------- //
 @media (max-width: 1399.8px) {
+    .locsect__map {
+        width: 45%;
+    }
+
+    .locsect__content {
+        width: 50%;
+    }
+
     .ctasect__inner {
         padding: 50px 0 50px 25px;
     }
+
     .ctasect__image {
         right: 0px;
         width: 45%;
     }
+
     .ctasect__content {
         max-width: 600px;
     }
@@ -584,9 +612,11 @@
         padding: 20px 20px;
         width: 220px;
     }
+
     .bluesect__inner {
         padding: 130px 20px 93px 80px;
     }
+
     .heroslider__wrapper {
         padding: 0 25px;
     }
@@ -610,30 +640,63 @@
 }
 
 @media (max-width: 1199.8px) {
+    .locsect__mobile-btn {
+        display: inline-flex;
+        order: 3;
+    }
+
+    .locsect__map {
+        width: 100%;
+        order: 2;
+        margin-bottom: 50px;
+
+        img {
+            max-width: 700px;
+        }
+    }
+
+    .locsect__content {
+        max-width: 700px;
+        width: 100%;
+        margin-bottom: 50px;
+
+        .sectbtn {
+            display: none;
+        }
+    }
+
     .ctasect__content {
         max-width: 500px;
-        .secttitle{
+
+        .secttitle {
             margin-bottom: 30px;
         }
     }
+
     .ctasect__inner {
         padding: 40px 0 40px 20px;
     }
-    .locsect__title{
+
+    .locsect__title {
         margin-bottom: 20px;
     }
-    .locsect__item{
+
+    .locsect__item {
         height: 450px;
     }
+
     .locsect__inner {
         padding: 80px 25px 90px;
     }
+
     .locsect__info {
         max-width: 100%;
     }
+
     .bluesect__inner {
         padding: 130px 0px 93px 55px;
     }
+
     .ourservice__inner {
         flex-direction: column;
     }
@@ -642,6 +705,7 @@
         width: 50%;
         margin-bottom: 50px;
     }
+
     .ourservice__items {
         width: 80%;
         padding-right: 0;
@@ -653,66 +717,83 @@
     .ctasect__inner {
         padding: 30px 0 30px 20px;
     }
+
     .ctasect__inner:before {
         border-bottom: 120px solid #fff;
         border-left: 120px solid transparent;
         border-right: 120px solid transparent;
     }
+
     .ctasect__content {
         max-width: 430px;
     }
+
     .ctasect__image {
         right: -30px;
     }
-    .locsect__item{
+
+    .locsect__item {
         height: 350px;
     }
+
     .bluesect__inner:before {
         border-bottom: 100px solid #fff;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
     }
-    .bluesect__inner{
+
+    .bluesect__inner {
         flex-wrap: wrap;
         padding: 110px 30px 93px 55px;
     }
+
     .bluesect__left {
         max-width: 100%;
         width: 100%;
         padding-right: 0px;
         margin-bottom: 40px;
     }
+
     .bluesect__right {
         width: 100%;
     }
-    .bluesect__image{
+
+    .bluesect__image {
         height: 500px;
     }
+
     .ourservice__inner {
         padding: 80px 20px 100px 20px;
     }
+
     .ourservice__items {
         width: 100%;
         padding-right: 0;
         margin: 0 auto;
     }
+
     .heroslider__wrapper {
         padding: 0 20px;
     }
 }
+
 @media (max-width: 767.8px) {
     .ctasect__inner {
         padding: 30px 0 100px 20px;
     }
-    .ctasect__image{
+
+    .ctasect__image {
         bottom: -30px;
     }
+
     .locsect__inner {
         padding: 70px 15px 60px;
     }
-    .locsect__item{
+
+    .locsect__item {
         height: 300px;
     }
+
     .heroslider__inner p {
         font-size: 16px;
         margin-bottom: 40px;
@@ -724,78 +805,101 @@
 }
 
 @media (max-width: 575.8px) {
+    .locsect__content {
+        margin-bottom: 10px;
+    }
+    .locsect__map {
+        margin-bottom: 30px;
+    }
     .ctasect__bottom .container.line {
         height: 40px;
     }
+
     .ctasect__inner:before {
         border-bottom: 85px solid #fff;
         border-left: 85px solid transparent;
         border-right: 85px solid transparent;
     }
+
     .ctasect__inner {
         padding: 30px 25px 100px 5px;
     }
+
     .locsect__inner {
         padding: 70px 5px 40px;
     }
+
     .locsect__slider {
-    
+
         .swiper-pagination-bullet {
             width: 8px;
             height: 8px;
             margin: 0 5px !important;
         }
     }
-    .locsect__info ul li{
+
+    .locsect__info ul li {
         width: 45%;
     }
-    .locsect__item{
+
+    .locsect__item {
         height: 60vw;
     }
-    
-    .locsect__slider{
+
+    .locsect__slider {
         margin-top: 20px;
     }
-    .bluesect__left a{
+
+    .bluesect__left a {
         width: 100%;
     }
+
     .bluesect__frame {
         padding: 13px 20px;
         width: 220px;
         bottom: 20px;
         left: -15px;
     }
+
     .bluesect__left ul li {
         padding-left: 40px;
         margin-bottom: 20px;
     }
+
     .bluesect__left ul li img {
         width: 28px;
         height: 28px;
     }
-    .bluesect__image{
+
+    .bluesect__image {
         height: auto;
     }
+
     .bluesect__inner:before {
         border-bottom: 85px solid #fff;
         border-left: 85px solid transparent;
         border-right: 85px solid transparent;
     }
+
     .bluesect__inner {
         padding: 100px 15px 70px 20px;
     }
+
     .ourservice__inner {
         padding: 60px 5px 80px 5px;
     }
+
     .ourservice__info {
         width: 100%;
     }
-    .ourservice__item{
+
+    .ourservice__item {
         max-width: 280px;
         height: 350px;
         margin: 0 auto 30px;
 
     }
+
     .heroslider__wrapper {
         padding: 0 5px;
     }
