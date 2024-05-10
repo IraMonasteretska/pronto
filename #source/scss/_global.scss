@@ -56,6 +56,7 @@ p{
 
 body {
     position: relative;
+    color: #61678B;
     font-family: "Roboto", sans-serif;
     &.hidden{
         overflow: hidden;
@@ -147,9 +148,24 @@ body {
 }
 
 .container.line{
-    border-left:  1px solid rgba(#fff, .15);
-    border-right:  1px solid rgba(#fff, .15);
     height: 100%;
+    position: relative;
+    &:before,
+    &:after{
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(#fff, .15);
+    }
+    &:before{
+        left: 0;
+    }
+    &:after{
+        right: 0;
+    }
 }
 
 @media (max-width:1199.8px) {

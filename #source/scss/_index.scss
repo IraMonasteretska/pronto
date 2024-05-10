@@ -129,8 +129,11 @@
 // ourservice --------------- //
 
 .ourservice {
-    .container {
-        border-color: rgba(#444444, .15);
+    .container.line {
+        &:before,
+        &:after{
+            background-color: rgba(#444444, .15);
+        }
     }
 }
 
@@ -240,7 +243,9 @@
 // bluesect --------------- //
 
 .bluesect .container.line {
-    border-left: 1px solid rgba(#444444, .15);
+    &:before {
+        background-color: rgba(#444444, .15);
+    }
 }
 
 .bluesect__inner {
@@ -397,7 +402,11 @@
 
 .locsect {
     .container.line {
-        border-color: rgba(#444444, .15);
+
+        &:before,
+        &:after {
+            background-color: rgba(#444444, .15);
+        }
     }
 }
 
@@ -515,14 +524,22 @@
 .ctasect {
 
     .container.line {
-        border-right: 1px solid rgba(#444444, .15);
+
+        &:before{
+            background-color: rgba(#fff, .2);
+        }
+        &:after {
+            background-color: rgba(#444444, .15);
+        }
     }
 }
 
 .ctasect__bottom {
     .container.line {
         height: 64px;
-        border-left: 1px solid rgba(#444444, .15);
+        &:before{
+            background-color: rgba(#444444, .15);
+        }
     }
 }
 
@@ -808,9 +825,11 @@
     .locsect__content {
         margin-bottom: 10px;
     }
+
     .locsect__map {
         margin-bottom: 30px;
     }
+
     .ctasect__bottom .container.line {
         height: 40px;
     }

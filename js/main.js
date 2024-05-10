@@ -62,6 +62,16 @@ $(document).ready(function () {
     // disable: 'mobile',
   });
 
+  // ACCORDION ----------- //
+  $('.accordeon__head').click(function () {
+    var $this =  $(this).closest('.accordeon__row');
+    $('.accordeon__row').not($this).removeClass('active');
+    $this.toggleClass('active');
+    $('.accordeon__body').not($this.find(('.accordeon__body'))).slideUp();
+    $this.find('.accordeon__body').slideToggle();
+  });
+
+
 
 });
 
