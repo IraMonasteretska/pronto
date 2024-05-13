@@ -73,6 +73,37 @@ $(document).ready(function () {
 
 
 
+
+
+
+  // SERVICE PAGE
+  var swiper = new Swiper(".galslider", {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      576: {
+        slidesPerView: 1.5,
+        spaceBetween: 40,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2.5,
+        spaceBetween: 40,
+      },
+    },
+  });
+
+
+
+
 });
 
 
