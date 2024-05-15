@@ -1,0 +1,198 @@
+.infosect2.pricing {
+
+    p,
+    h3 {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .largepicinfosect {
+        margin-top: 125px;
+    }
+
+    .abs {
+        top: 180px;
+    }
+
+    .infosect__wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .infosect__descr {
+            padding-left: 0;
+        }
+    }
+
+}
+
+.pricing {
+    .bluesect__inner {
+        flex-wrap: wrap;
+    }
+}
+
+.infstepsboxes {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-top: 70px;
+
+    .checktext {
+        position: relative;
+        padding-left: 47px;
+        font-weight: 500;
+
+        img {
+            width: 35px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: -6px;
+        }
+    }
+}
+
+.infstepsbox {
+    margin-bottom: 60px;
+
+    span {
+        display: inline-block;
+        margin-bottom: 2px;
+        color: #9BDD01;
+        font-size: 25px;
+        line-height: 130%;
+        font-family: "Koulen", sans-serif;
+    }
+
+    .title {
+        margin-bottom: 18px;
+        font-family: "Koulen", sans-serif;
+        color: #fff;
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    p {
+        font-size: 16px;
+        color: #B9B9B9;
+        max-width: 540px;
+    }
+}
+
+.ivoicesection {
+    padding: 130px 0 0 0;
+    position: relative;
+
+    .container {
+        padding-bottom: 130px;
+    }
+
+    h3 {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: #141A3E;
+        font-size: 55px;
+        font-weight: 400;
+        font-family: "Koulen", sans-serif;
+        line-height: 130%;
+        margin-bottom: 129px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .col-lg-10 {
+        position: relative;
+
+        .absp {
+            position: absolute;
+            left: 0;
+            top: -20px;
+            max-width: 247px;
+        }
+    }
+
+
+}
+
+.ivoicesection__imgwrapper {
+    background: rgba(#B9B9B9, 0.2);
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.infosect2.linesect .abs {
+    left: 40px;
+    top: 105px;
+}
+
+.linesect .container.line {
+    &::after {
+        background-color: rgba(68, 68, 68, 0.15);
+    }
+
+    &::before {
+        background-color: rgba(68, 68, 68, 0.15);
+    }
+}
+
+.linesect .container.line {
+    &::after {
+        background-color: rgba(68, 68, 68, 0.15);
+    }
+
+    &::before {
+        background-color: rgba(68, 68, 68, 0.15);
+    }
+}
+
+.largepicinfosect,
+.ivoicesection__imgwrapper,
+.includeboxes {
+    position: relative;
+    z-index: 2;
+}
+
+
+@media(max-width:1399.8px) {
+    .infosect__wrapper {
+        padding: 70px 0;
+    }
+
+    .infosect__wrapper .infosect__descr h3 br {
+        display: none;
+    }
+
+    .infosect2 .largepicinfosect {
+        margin-top: 40px;
+    }
+
+    .infstepsboxes {
+        margin-top: 40px;
+    }
+
+    .infstepsbox .title {
+        margin-bottom: 10px;
+    }
+
+    .ivoicesection h3 {
+        margin-bottom: 60px;
+    }
+
+    .ivoicesection {
+        padding-top: 80px;
+    }
+
+    
+
+
+}
+
+
+
+
+// font-family: "Koulen", sans-serif;
