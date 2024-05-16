@@ -1,0 +1,54 @@
+.locsect.locsect_area {
+    .locsect__inner {
+        padding: 70px 25px 180px;
+    }
+
+    .secttitle {
+        margin-bottom: 40px;
+    }
+
+    .locsect__info>p {
+        margin-bottom: 50px;
+    }
+
+    .locsect__mapbrand {
+        position: absolute;
+        width: 118px;
+        height: 111px;
+        border-radius: 5px;
+        background: rgba(#545A7E, 0.8);
+        bottom: 50px;
+        left: -30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 50px;
+        }
+    }
+
+    .locsect__map {
+        position: relative;
+        overflow: initial;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
+
+.bluesect.bluesect__area {
+
+    .bluesect__inner  {
+        flex-wrap: wrap;
+    }
+
+    .colbox {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}

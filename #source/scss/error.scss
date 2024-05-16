@@ -1,0 +1,100 @@
+.errorwrapper {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #11173B, #343A5E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .title {
+        font-size: 220px;
+        font-weight: 700;
+        line-height: 130%;
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .subtitle {
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        line-height: 130%;
+        margin-bottom: 25px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        max-width: 100%;
+    }
+
+    p {
+        max-width: 417px;
+        font-size: 17px;
+        color: #B9B9B9;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width:1599.8px) {
+    .errorwrapper .title {
+        font-size: 180px;
+    }
+
+    .errorwrapper .subtitle {
+        font-size: 28px;
+    }
+
+    .errorwrapper p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .errorwrapper .title {
+        font-size: 150px;
+    }
+
+    .errorwrapper .subtitle {
+        font-size: 24px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .errorwrapper .title {
+        font-size: 100px;
+    }
+
+    .errorwrapper .subtitle {
+        font-size: 21px;
+    }
+
+    .errorwrapper p {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .errorwrapper {
+        padding: 20px;
+    }
+
+    .errorwrapper .title {
+        font-size: 80px;
+    }
+
+    .errorwrapper .subtitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .errorwrapper p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+}
