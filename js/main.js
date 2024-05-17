@@ -64,7 +64,7 @@ $(document).ready(function () {
 
   // ACCORDION ----------- //
   $('.accordeon__head').click(function () {
-    var $this =  $(this).closest('.accordeon__row');
+    var $this = $(this).closest('.accordeon__row');
     $('.accordeon__row').not($this).removeClass('active');
     $this.toggleClass('active');
     $('.accordeon__body').not($this.find(('.accordeon__body'))).slideUp();
@@ -101,9 +101,23 @@ $(document).ready(function () {
     },
   });
 
+  // area slider
 
 
+  var swiper = new Swiper(".areaslider", {
+    spaceBetween: 10,
+    loop: true,
+    speed: 1200,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 
 });
+
+
 
 

@@ -1,0 +1,67 @@
+.cta-about{
+    margin-top: 100px;
+    margin-bottom: 130px;
+    position: relative;
+    .bg-icon{
+        position: absolute;
+        top: 0;
+        right: 370px;
+        height: 100%;
+    }
+    .bg-img{
+        position: absolute;
+        bottom: 0;
+        right: 450px;
+    }
+}
+
+.aboutsect {
+    padding: 70px 0 115px;
+}
+
+.aboutsect__content {
+    padding-left: 37px;
+    max-width: 640px;
+
+    .secttitle {
+        background: linear-gradient(222deg, rgba(52, 58, 94, 1) 0%, rgba(17, 23, 59, 1) 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin-bottom: 40px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        max-width: 587px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.aboutsect__image {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 0 0 auto;
+    padding-right: 40px;
+}
+
+.aboutsect__image-img {
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.aboutsect__frame-top {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+
+.aboutsect__frame-bottom {
+    position: absolute;
+    bottom: 50px;
+    left: -46px;
+    background-size: cover;
+}
